@@ -1,0 +1,894 @@
+$comment
+	File created using the following command:
+		vcd file vecinos.msim.vcd -direction
+$end
+$date
+	Thu Nov 28 11:36:11 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module controlgeneralversion3_4_vlg_vec_tst $end
+$var reg 1 ! clock $end
+$var reg 1 " p0 $end
+$var reg 1 # p1 $end
+$var reg 1 $ p2 $end
+$var reg 1 % p3 $end
+$var reg 1 & reset $end
+$var reg 4 ' vector_entrada [3:0] $end
+$var wire 1 ( vecino_abajo [3] $end
+$var wire 1 ) vecino_abajo [2] $end
+$var wire 1 * vecino_abajo [1] $end
+$var wire 1 + vecino_abajo [0] $end
+$var wire 1 , vecino_arriba [3] $end
+$var wire 1 - vecino_arriba [2] $end
+$var wire 1 . vecino_arriba [1] $end
+$var wire 1 / vecino_arriba [0] $end
+$var wire 1 0 vecino_der [3] $end
+$var wire 1 1 vecino_der [2] $end
+$var wire 1 2 vecino_der [1] $end
+$var wire 1 3 vecino_der [0] $end
+$var wire 1 4 vecino_izq [3] $end
+$var wire 1 5 vecino_izq [2] $end
+$var wire 1 6 vecino_izq [1] $end
+$var wire 1 7 vecino_izq [0] $end
+$var wire 1 8 sampler $end
+$scope module i1 $end
+$var wire 1 9 gnd $end
+$var wire 1 : vcc $end
+$var wire 1 ; unknown $end
+$var tri1 1 < devclrn $end
+$var tri1 1 = devpor $end
+$var tri1 1 > devoe $end
+$var wire 1 ? distancias_dato[2][7]~q $end
+$var wire 1 @ Mux11~11_combout $end
+$var wire 1 A vecino_der~6_combout $end
+$var wire 1 B Mux10~14_combout $end
+$var wire 1 C vecino_der~8_combout $end
+$var wire 1 D Mux9~13_combout $end
+$var wire 1 E Mux8~11_combout $end
+$var wire 1 F Mux8~13_combout $end
+$var wire 1 G vecino_der~18_combout $end
+$var wire 1 H vecino_izq~0_combout $end
+$var wire 1 I vecino_izq~2_combout $end
+$var wire 1 J vecino_izq~8_combout $end
+$var wire 1 K vecino_izq~13_combout $end
+$var wire 1 L distancias_dato~49_combout $end
+$var wire 1 M clock~input_o $end
+$var wire 1 N clock~inputclkctrl_outclk $end
+$var wire 1 O vecino_arriba[0]~output_o $end
+$var wire 1 P vecino_arriba[1]~output_o $end
+$var wire 1 Q vecino_arriba[2]~output_o $end
+$var wire 1 R vecino_arriba[3]~output_o $end
+$var wire 1 S vecino_abajo[0]~output_o $end
+$var wire 1 T vecino_abajo[1]~output_o $end
+$var wire 1 U vecino_abajo[2]~output_o $end
+$var wire 1 V vecino_abajo[3]~output_o $end
+$var wire 1 W vecino_der[0]~output_o $end
+$var wire 1 X vecino_der[1]~output_o $end
+$var wire 1 Y vecino_der[2]~output_o $end
+$var wire 1 Z vecino_der[3]~output_o $end
+$var wire 1 [ vecino_izq[0]~output_o $end
+$var wire 1 \ vecino_izq[1]~output_o $end
+$var wire 1 ] vecino_izq[2]~output_o $end
+$var wire 1 ^ vecino_izq[3]~output_o $end
+$var wire 1 _ p3~input_o $end
+$var wire 1 ` p0~input_o $end
+$var wire 1 a p1~input_o $end
+$var wire 1 b Decoder0~0_combout $end
+$var wire 1 c p2~input_o $end
+$var wire 1 d Decoder0~14_combout $end
+$var wire 1 e distancias_dato~14_combout $end
+$var wire 1 f reset~input_o $end
+$var wire 1 g reset~inputclkctrl_outclk $end
+$var wire 1 h distancias_dato[13][4]~q $end
+$var wire 1 i distancias_dato~13_combout $end
+$var wire 1 j distancias_dato[14][4]~q $end
+$var wire 1 k Decoder0~12_combout $end
+$var wire 1 l distancias_dato~12_combout $end
+$var wire 1 m distancias_dato[12][4]~q $end
+$var wire 1 n Mux11~6_combout $end
+$var wire 1 o Mux11~7_combout $end
+$var wire 1 p distancias_dato~7_combout $end
+$var wire 1 q distancias_dato[3][4]~q $end
+$var wire 1 r distancias_dato~4_combout $end
+$var wire 1 s distancias_dato[2][4]~q $end
+$var wire 1 t distancias_dato~5_combout $end
+$var wire 1 u distancias_dato[1][4]~q $end
+$var wire 1 v Decoder0~6_combout $end
+$var wire 1 w distancias_dato~6_combout $end
+$var wire 1 x distancias_dato[0][4]~q $end
+$var wire 1 y Mux11~2_combout $end
+$var wire 1 z Mux11~3_combout $end
+$var wire 1 { Mux3~0_combout $end
+$var wire 1 | Mux3~1_combout $end
+$var wire 1 } distancias_dato~0_combout $end
+$var wire 1 ~ distancias_dato[10][4]~q $end
+$var wire 1 !! Decoder0~3_combout $end
+$var wire 1 "! distancias_dato~3_combout $end
+$var wire 1 #! distancias_dato[11][4]~q $end
+$var wire 1 $! Decoder0~1_combout $end
+$var wire 1 %! distancias_dato~1_combout $end
+$var wire 1 &! distancias_dato[9][4]~q $end
+$var wire 1 '! Decoder0~2_combout $end
+$var wire 1 (! distancias_dato~2_combout $end
+$var wire 1 )! distancias_dato[8][4]~q $end
+$var wire 1 *! Mux11~0_combout $end
+$var wire 1 +! Mux11~1_combout $end
+$var wire 1 ,! vector_entrada[3]~input_o $end
+$var wire 1 -! vecino_arriba~0_combout $end
+$var wire 1 .! Decoder0~8_combout $end
+$var wire 1 /! distancias_dato~8_combout $end
+$var wire 1 0! distancias_dato[6][4]~q $end
+$var wire 1 1! Decoder0~9_combout $end
+$var wire 1 2! distancias_dato~9_combout $end
+$var wire 1 3! distancias_dato[5][4]~q $end
+$var wire 1 4! Decoder0~10_combout $end
+$var wire 1 5! distancias_dato~10_combout $end
+$var wire 1 6! distancias_dato[4][4]~q $end
+$var wire 1 7! Mux11~4_combout $end
+$var wire 1 8! Mux11~5_combout $end
+$var wire 1 9! vecino_arriba~1_combout $end
+$var wire 1 :! vecino_arriba~2_combout $end
+$var wire 1 ;! vecino_arriba~3_combout $end
+$var wire 1 <! Decoder0~4_combout $end
+$var wire 1 =! distancias_dato~19_combout $end
+$var wire 1 >! distancias_dato[2][5]~q $end
+$var wire 1 ?! Decoder0~7_combout $end
+$var wire 1 @! distancias_dato~22_combout $end
+$var wire 1 A! distancias_dato[3][5]~q $end
+$var wire 1 B! Decoder0~5_combout $end
+$var wire 1 C! distancias_dato~20_combout $end
+$var wire 1 D! distancias_dato[1][5]~q $end
+$var wire 1 E! distancias_dato~21_combout $end
+$var wire 1 F! distancias_dato[0][5]~q $end
+$var wire 1 G! Mux10~2_combout $end
+$var wire 1 H! Mux10~3_combout $end
+$var wire 1 I! Mux2~0_combout $end
+$var wire 1 J! Mux2~1_combout $end
+$var wire 1 K! distancias_dato~15_combout $end
+$var wire 1 L! distancias_dato[10][5]~q $end
+$var wire 1 M! distancias_dato~18_combout $end
+$var wire 1 N! distancias_dato[11][5]~q $end
+$var wire 1 O! distancias_dato~16_combout $end
+$var wire 1 P! distancias_dato[9][5]~q $end
+$var wire 1 Q! distancias_dato~17_combout $end
+$var wire 1 R! distancias_dato[8][5]~q $end
+$var wire 1 S! Mux10~0_combout $end
+$var wire 1 T! Mux10~1_combout $end
+$var wire 1 U! vecino_arriba~4_combout $end
+$var wire 1 V! distancias_dato~26_combout $end
+$var wire 1 W! distancias_dato[7][5]~q $end
+$var wire 1 X! distancias_dato~24_combout $end
+$var wire 1 Y! distancias_dato[5][5]~q $end
+$var wire 1 Z! distancias_dato~25_combout $end
+$var wire 1 [! distancias_dato[4][5]~q $end
+$var wire 1 \! Mux10~4_combout $end
+$var wire 1 ]! Mux10~5_combout $end
+$var wire 1 ^! vecino_arriba~5_combout $end
+$var wire 1 _! distancias_dato~29_combout $end
+$var wire 1 `! distancias_dato[13][5]~q $end
+$var wire 1 a! distancias_dato~28_combout $end
+$var wire 1 b! distancias_dato[12][5]~q $end
+$var wire 1 c! Decoder0~13_combout $end
+$var wire 1 d! distancias_dato~27_combout $end
+$var wire 1 e! distancias_dato[14][5]~q $end
+$var wire 1 f! Mux10~6_combout $end
+$var wire 1 g! Mux10~7_combout $end
+$var wire 1 h! vecino_arriba~6_combout $end
+$var wire 1 i! Decoder0~11_combout $end
+$var wire 1 j! distancias_dato~30_combout $end
+$var wire 1 k! distancias_dato[10][6]~q $end
+$var wire 1 l! distancias_dato~33_combout $end
+$var wire 1 m! distancias_dato[11][6]~q $end
+$var wire 1 n! distancias_dato~31_combout $end
+$var wire 1 o! distancias_dato[9][6]~q $end
+$var wire 1 p! distancias_dato~32_combout $end
+$var wire 1 q! distancias_dato[8][6]~q $end
+$var wire 1 r! Mux9~0_combout $end
+$var wire 1 s! Mux9~1_combout $end
+$var wire 1 t! distancias_dato~34_combout $end
+$var wire 1 u! distancias_dato[2][6]~q $end
+$var wire 1 v! distancias_dato~37_combout $end
+$var wire 1 w! distancias_dato[3][6]~q $end
+$var wire 1 x! distancias_dato~35_combout $end
+$var wire 1 y! distancias_dato[1][6]~q $end
+$var wire 1 z! distancias_dato~36_combout $end
+$var wire 1 {! distancias_dato[0][6]~q $end
+$var wire 1 |! Mux9~2_combout $end
+$var wire 1 }! Mux9~3_combout $end
+$var wire 1 ~! Mux1~0_combout $end
+$var wire 1 !" Mux1~1_combout $end
+$var wire 1 "" distancias_dato~41_combout $end
+$var wire 1 #" distancias_dato[7][6]~q $end
+$var wire 1 $" distancias_dato~38_combout $end
+$var wire 1 %" distancias_dato[6][6]~q $end
+$var wire 1 &" distancias_dato~40_combout $end
+$var wire 1 '" distancias_dato[4][6]~q $end
+$var wire 1 (" distancias_dato~39_combout $end
+$var wire 1 )" distancias_dato[5][6]~q $end
+$var wire 1 *" Mux9~4_combout $end
+$var wire 1 +" Mux9~5_combout $end
+$var wire 1 ," vecino_arriba~8_combout $end
+$var wire 1 -" vecino_arriba~7_combout $end
+$var wire 1 ." distancias_dato~44_combout $end
+$var wire 1 /" distancias_dato[13][6]~q $end
+$var wire 1 0" distancias_dato~42_combout $end
+$var wire 1 1" distancias_dato[14][6]~q $end
+$var wire 1 2" distancias_dato~43_combout $end
+$var wire 1 3" distancias_dato[12][6]~q $end
+$var wire 1 4" Mux9~6_combout $end
+$var wire 1 5" Mux9~7_combout $end
+$var wire 1 6" vecino_arriba~9_combout $end
+$var wire 1 7" distancias_dato~59_combout $end
+$var wire 1 8" distancias_dato[13][7]~q $end
+$var wire 1 9" distancias_dato~57_combout $end
+$var wire 1 :" distancias_dato[14][7]~q $end
+$var wire 1 ;" distancias_dato~58_combout $end
+$var wire 1 <" distancias_dato[12][7]~q $end
+$var wire 1 =" Mux8~6_combout $end
+$var wire 1 >" Mux8~7_combout $end
+$var wire 1 ?" distancias_dato~53_combout $end
+$var wire 1 @" distancias_dato[6][7]~q $end
+$var wire 1 A" distancias_dato~56_combout $end
+$var wire 1 B" distancias_dato[7][7]~q $end
+$var wire 1 C" distancias_dato~54_combout $end
+$var wire 1 D" distancias_dato[5][7]~q $end
+$var wire 1 E" distancias_dato~55_combout $end
+$var wire 1 F" distancias_dato[4][7]~q $end
+$var wire 1 G" Mux8~4_combout $end
+$var wire 1 H" Mux8~5_combout $end
+$var wire 1 I" distancias_dato~52_combout $end
+$var wire 1 J" distancias_dato[3][7]~q $end
+$var wire 1 K" distancias_dato~50_combout $end
+$var wire 1 L" distancias_dato[1][7]~q $end
+$var wire 1 M" distancias_dato~51_combout $end
+$var wire 1 N" distancias_dato[0][7]~q $end
+$var wire 1 O" Mux8~2_combout $end
+$var wire 1 P" Mux8~3_combout $end
+$var wire 1 Q" Mux0~0_combout $end
+$var wire 1 R" Mux0~1_combout $end
+$var wire 1 S" distancias_dato~45_combout $end
+$var wire 1 T" distancias_dato[10][7]~q $end
+$var wire 1 U" distancias_dato~48_combout $end
+$var wire 1 V" distancias_dato[11][7]~q $end
+$var wire 1 W" distancias_dato~46_combout $end
+$var wire 1 X" distancias_dato[9][7]~q $end
+$var wire 1 Y" distancias_dato~47_combout $end
+$var wire 1 Z" distancias_dato[8][7]~q $end
+$var wire 1 [" Mux8~0_combout $end
+$var wire 1 \" Mux8~1_combout $end
+$var wire 1 ]" vecino_arriba~10_combout $end
+$var wire 1 ^" vecino_arriba~11_combout $end
+$var wire 1 _" vecino_arriba~12_combout $end
+$var wire 1 `" vector_entrada[1]~input_o $end
+$var wire 1 a" vecino_abajo~0_combout $end
+$var wire 1 b" vecino_abajo~1_combout $end
+$var wire 1 c" vecino_abajo~2_combout $end
+$var wire 1 d" vecino_abajo~3_combout $end
+$var wire 1 e" vecino_abajo~4_combout $end
+$var wire 1 f" vecino_abajo~5_combout $end
+$var wire 1 g" vecino_abajo~6_combout $end
+$var wire 1 h" vecino_abajo~7_combout $end
+$var wire 1 i" Add2~2_combout $end
+$var wire 1 j" Mux11~15_combout $end
+$var wire 1 k" Mux11~12_combout $end
+$var wire 1 l" Add2~0_combout $end
+$var wire 1 m" Mux11~14_combout $end
+$var wire 1 n" Mux11~13_combout $end
+$var wire 1 o" vecino_der~2_combout $end
+$var wire 1 p" vecino_der~3_combout $end
+$var wire 1 q" distancias_dato~11_combout $end
+$var wire 1 r" distancias_dato[7][4]~q $end
+$var wire 1 s" Mux11~10_combout $end
+$var wire 1 t" Mux11~9_combout $end
+$var wire 1 u" Add2~1_combout $end
+$var wire 1 v" vecino_der~0_combout $end
+$var wire 1 w" Mux11~8_combout $end
+$var wire 1 x" vecino_der~1_combout $end
+$var wire 1 y" vector_entrada[2]~input_o $end
+$var wire 1 z" vecino_der~4_combout $end
+$var wire 1 {" vecino_der~5_combout $end
+$var wire 1 |" Mux10~8_combout $end
+$var wire 1 }" Mux10~11_combout $end
+$var wire 1 ~" vecino_der~7_combout $end
+$var wire 1 !# Mux10~12_combout $end
+$var wire 1 "# Mux10~15_combout $end
+$var wire 1 ## vecino_der~9_combout $end
+$var wire 1 $# vecino_der~10_combout $end
+$var wire 1 %# Mux9~15_combout $end
+$var wire 1 &# Mux9~14_combout $end
+$var wire 1 '# vecino_der~13_combout $end
+$var wire 1 (# Mux9~12_combout $end
+$var wire 1 )# vecino_der~14_combout $end
+$var wire 1 *# Mux9~9_combout $end
+$var wire 1 +# vecino_der~11_combout $end
+$var wire 1 ,# Mux9~8_combout $end
+$var wire 1 -# Mux9~11_combout $end
+$var wire 1 .# vecino_der~12_combout $end
+$var wire 1 /# vecino_der~15_combout $end
+$var wire 1 0# Mux8~15_combout $end
+$var wire 1 1# Mux8~12_combout $end
+$var wire 1 2# vecino_der~19_combout $end
+$var wire 1 3# Mux8~10_combout $end
+$var wire 1 4# Mux8~9_combout $end
+$var wire 1 5# vecino_der~16_combout $end
+$var wire 1 6# Mux8~8_combout $end
+$var wire 1 7# vecino_der~17_combout $end
+$var wire 1 8# vecino_der~20_combout $end
+$var wire 1 9# Add3~1_combout $end
+$var wire 1 :# Add3~0_combout $end
+$var wire 1 ;# vecino_izq~1_combout $end
+$var wire 1 <# vecino_izq~3_combout $end
+$var wire 1 =# vector_entrada[0]~input_o $end
+$var wire 1 ># vecino_izq~4_combout $end
+$var wire 1 ?# vecino_izq~5_combout $end
+$var wire 1 @# Mux10~13_combout $end
+$var wire 1 A# vecino_izq~6_combout $end
+$var wire 1 B# vecino_izq~7_combout $end
+$var wire 1 C# distancias_dato~23_combout $end
+$var wire 1 D# distancias_dato[6][5]~q $end
+$var wire 1 E# Mux10~10_combout $end
+$var wire 1 F# Mux10~9_combout $end
+$var wire 1 G# vecino_izq~9_combout $end
+$var wire 1 H# vecino_izq~10_combout $end
+$var wire 1 I# Mux9~10_combout $end
+$var wire 1 J# vecino_izq~14_combout $end
+$var wire 1 K# vecino_izq~11_combout $end
+$var wire 1 L# vecino_izq~12_combout $end
+$var wire 1 M# vecino_izq~15_combout $end
+$var wire 1 N# vecino_izq~18_combout $end
+$var wire 1 O# vecino_izq~19_combout $end
+$var wire 1 P# Mux8~14_combout $end
+$var wire 1 Q# vecino_izq~16_combout $end
+$var wire 1 R# vecino_izq~17_combout $end
+$var wire 1 S# vecino_izq~20_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+b1000 '
+1+
+1*
+1)
+1(
+1/
+1.
+1-
+1,
+13
+12
+11
+10
+17
+06
+15
+04
+x8
+09
+1:
+x;
+1<
+1=
+1>
+0?
+1@
+1A
+0B
+0C
+0D
+0E
+0F
+0G
+1H
+1I
+0J
+1K
+0L
+0M
+0N
+1O
+1P
+1Q
+1R
+1S
+1T
+1U
+1V
+1W
+1X
+1Y
+1Z
+1[
+0\
+1]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+1e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+1n
+1o
+0p
+0q
+1r
+0s
+0t
+0u
+1v
+0w
+0x
+0y
+0z
+0{
+0|
+1}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+1(!
+0)!
+0*!
+0+!
+1,!
+1-!
+0.!
+0/!
+00!
+01!
+12!
+03!
+04!
+05!
+06!
+17!
+18!
+19!
+0:!
+1;!
+0<!
+0=!
+0>!
+0?!
+1@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+1G!
+1H!
+1I!
+1J!
+1K!
+0L!
+0M!
+0N!
+1O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+1U!
+1V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+1_!
+0`!
+1a!
+0b!
+0c!
+0d!
+0e!
+1f!
+1g!
+1h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+1p!
+0q!
+1r!
+1s!
+1t!
+0u!
+0v!
+0w!
+1x!
+0y!
+0z!
+0{!
+1|!
+1}!
+1~!
+1!"
+0""
+0#"
+0$"
+0%"
+1&"
+0'"
+1("
+0)"
+1*"
+1+"
+1,"
+1-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+16"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+1]"
+0^"
+1_"
+0`"
+1a"
+1b"
+1c"
+1d"
+1e"
+1f"
+1g"
+1h"
+0i"
+1j"
+1k"
+0l"
+0m"
+0n"
+0o"
+0p"
+1q"
+0r"
+0s"
+0t"
+0u"
+0v"
+1w"
+0x"
+0y"
+0z"
+1{"
+1|"
+0}"
+1~"
+0!#
+1"#
+0##
+1$#
+0%#
+0&#
+0'#
+0(#
+0)#
+1*#
+0+#
+0,#
+1-#
+0.#
+1/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+18#
+09#
+0:#
+1;#
+1<#
+0=#
+1>#
+1?#
+1@#
+1A#
+1B#
+1C#
+0D#
+1E#
+0F#
+0G#
+0H#
+0I#
+1J#
+0K#
+0L#
+1M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+$end
+#50000
+1!
+1M
+1N
+08
+#100000
+0!
+0M
+0N
+18
+#150000
+1!
+1M
+1N
+08
+#200000
+0!
+0M
+0N
+18
+#250000
+1!
+1M
+1N
+08
+#300000
+0!
+0M
+0N
+18
+#350000
+1!
+1M
+1N
+08
+#400000
+0!
+0M
+0N
+18
+#430000
+1"
+1`
+08
+1,#
+1%#
+0"#
+1!#
+1}"
+0|"
+1z"
+0w"
+1u"
+1t"
+1s"
+1n"
+1m"
+1l"
+0k"
+0j"
+1i"
+0r!
+0f!
+1S!
+0G!
+1B!
+07!
+1*!
+1y
+0v
+0n
+0@
+1.#
+1##
+0I
+15#
+1+#
+1'#
+1v"
+1o"
+0H
+1G
+1C
+0s!
+1T!
+0H!
+0x!
+1C!
+1t
+08!
+1+!
+1z
+1z!
+1E!
+1w
+0o
+08#
+0/#
+0{"
+0<#
+1)#
+0;#
+0##
+0I!
+09!
+1{
+0Z
+0Y
+0W
+00
+01
+03
+1/#
+0J!
+1|
+1Y
+11
+0?#
+0C!
+0t
+0[
+07
+#440000
+b0 '
+b1 '
+1=#
+0,!
+18
+0>#
+0]"
+0-"
+0U!
+0-!
+1S#
+1H#
+1?#
+0_"
+0h!
+0;!
+1^
+1\
+1[
+0R
+0P
+0O
+14
+16
+17
+0,
+0.
+0/
+#450000
+1!
+1M
+1N
+08
+#500000
+0!
+0M
+0N
+18
+#550000
+1!
+1M
+1N
+08
+#600000
+0!
+0M
+0N
+18
+#650000
+1!
+1M
+1N
+08
+#700000
+0!
+0M
+0N
+18
+#750000
+1!
+1M
+1N
+08
+#800000
+0!
+0M
+0N
+18
+#850000
+1!
+1M
+1N
+08
+#900000
+0!
+0M
+0N
+18
+#950000
+1!
+1M
+1N
+08
+#1000000

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\Users\Administrador\Documents\GitHub\vecinos\simulation\qsim
+vcontrolgeneralversion3_4
+Z1 !s100 1[ooQP]gE<1fEQ^12f`_51
+Z2 I<V2S8=c5k0jZbad5WShd92
+Z3 Vhl`H`KK49la_nLNLU7[eC1
+Z4 dF:\Users\Administrador\Documents\GitHub\vecinos\simulation\qsim
+Z5 w1732804569
+Z6 8vecinos.vo
+Z7 Fvecinos.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|vecinos.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1732804570.190000
+Z12 !s107 vecinos.vo|
+!s101 -O0
+vcontrolgeneralversion3_4_vlg_check_tst
+!i10b 1
+Z13 !s100 JLf5h`RTlIk;K9DCAGFh_0
+Z14 ITh@:7@I;z10l4B`5XG[W_1
+Z15 VDi4gYdeXb=7E3^iTF=_^B1
+R4
+Z16 w1732804567
+Z17 8vecinos.vt
+Z18 Fvecinos.vt
+L0 69
+R8
+r1
+!s85 0
+31
+Z19 !s108 1732804570.480000
+Z20 !s107 vecinos.vt|
+Z21 !s90 -work|work|vecinos.vt|
+!s101 -O0
+R10
+vcontrolgeneralversion3_4_vlg_sample_tst
+!i10b 1
+Z22 !s100 B;S8XE^32ObT`0:1:A[l_0
+Z23 I<@jQ66NA_kBP[dP5On1Hf0
+Z24 VI1m3>ja?BQKiYAgXnGCfA0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vcontrolgeneralversion3_4_vlg_vec_tst
+!i10b 1
+!s100 O4TA[H:HJCD@m<_XIMgY51
+IQONbB?3J8cdG5Vj[eIjNk0
+Z25 VSY^235W5h=CS0JnT5Y2IM0
+R4
+R16
+R17
+R18
+Z26 L0 457
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
